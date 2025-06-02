@@ -9,12 +9,15 @@ export default {
         "./vendor/laravel/jetstream/**/*.blade.php",
         "./storage/framework/views/*.php",
         "./resources/views/**/*.blade.php",
+        "./index.html",
+        "./src/**/*.{js,ts,jsx,tsx}",
+        "./node_modules/flowbite/**/*.js",
     ],
 
     theme: {
         extend: {
             fontFamily: {
-                sans: ["Figtree", ...defaultTheme.fontFamily.sans],
+                sans: ["Poppins", ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 matisse: {
@@ -42,6 +45,12 @@ export default {
                     800: "#454545",
                     900: "#3d3d3d",
                     950: "#262626",
+                },
+                black: {
+                    DEFAULT: "#212121",
+                },
+                white: {
+                    DEFAULT: "#FAFAFA",
                 },
             },
         },
